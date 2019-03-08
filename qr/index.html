@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script type="text/javascript" src="qrcode.js">
+</script>
+    <script type="text/javascript" src="html5-qrcode.js">
+</script>
+    <style type="text/css" media="screen">
+      body { text-align:center; }
+      
+      img{
+       width:150px;
+        height:150px; 
+      }
+    </style>
+  </head>
+  <body>
+    <form name="QRform" id="QRform">
+      <div class="form-group">
+          <label class="col-md-2 control-label" >Unique-ID(HASH)</label>
+            <div class="col-md-8 inputGroupContainer">
+               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span><input id="UID2" name="UID2" placeholder="UNIQUE ID" class="form-control" required="true" value="0aed43219ccf6b67890123456789abcdef123456" 
+                ondblclick ='updateQRCode(this.value)' onclick="this.focus();this.select();" type="text" readonly></div>
+            </div>
+      </div>
+    </form>
+    
+    <!-- This is where our QRCode will appear in. -->
+    <div id="qrcode"></div>
+    
+    <script type="text/javascript">
+      function updateQRCode(text) {
+
+        var element = document.getElementById("qrcode");
+
+        var bodyElement = document.body;
+        if(element.lastChild)
+          element.replaceChild(showQRCode(text), element.lastChild);
+        else
+          element.appendChild(showQRCode(text));
+
+      }
+
+      updateQRCode('valar morghulis');
+    </script>
+  </body>
+</html>

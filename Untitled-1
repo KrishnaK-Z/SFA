@@ -1,0 +1,24 @@
+
+<div class="form-group">
+                          <label class="col-md-2 control-label" >Unique-ID(HASH)</label>
+                          <div class="col-md-4 inputGroupContainer">
+                             <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span><input id="UID2" name="UID2" placeholder="UNIQUE ID" class="form-control" required="true" value="0aed43219ccf6b" onblur='generateBarCode();' type="text" readonly></div>
+                          </div>
+                       </div>
+                       <div class="form-group">
+                          <label class="col-md-8 control-label">
+                          </label>
+                        <div class="col-md-4 inputGroupContainer">
+                               <img id='barcode' src="https://api.qrserver.com/v1/create-qr-code/?data=<?php echo'0aed43219ccfwq' ?> &amp;size=50x50" alt="" width="250" height="250" />
+                               
+                               
+                               
+                               
+                               <?php
+    else 
+    {
+        echo "<script> alert('Invalid...');
+    window.location.href='login.php';
+    </script>";
+    }
+    ?>

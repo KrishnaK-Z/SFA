@@ -1,0 +1,80 @@
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+.navbar-default {
+  border-radius: 0;
+}
+
+.navbar-brand {
+  padding: 15px 5px;
+}
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+  margin-left: 0;
+}
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+.header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+}
+#ltrend {
+  width:100px;
+  height:30px;
+  position:relative;
+  text-align:left; 
+  bottom:5px;
+}
+
+div.het {
+  position:relative;
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.title {
+  text-align:center;
+  font-size: 24px;
+  font-family:Belgrano;
+  width: 40%;
+}
+.line {
+  display: inline-block;
+  width: 38%;
+  height: 2px;
+  background-color: #000;
+}
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  border-radius: 50%;
+  margin: 0 10px;
+  align-items: center;
+}
+
+
+#blah{
+    height:300px;
+    width:255px;
+    
+}
